@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RTq-Hf-Xo4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Day View Controller-->
+        <scene sceneID="TVO-U7-WoY">
+            <objects>
+                <viewController storyboardIdentifier="DayViewController" id="RTq-Hf-Xo4" customClass="DayViewController" customModule="Nom" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="npb-xG-Ta1"/>
+                        <viewControllerLayoutGuide type="bottom" id="xEF-s2-3SP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uuH-NF-udA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nWL-pY-T4B">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poniedziałek" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBR-ur-T8m">
+                                <rect key="frame" x="0.0" y="20" width="375" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Izc-RV-URr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kcc-hc-FSU">
+                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kcc-hc-FSU" firstAttribute="top" secondItem="nBR-ur-T8m" secondAttribute="bottom" id="07k-cO-RXd"/>
+                            <constraint firstAttribute="trailing" secondItem="nWL-pY-T4B" secondAttribute="trailing" id="5Us-ND-owg"/>
+                            <constraint firstItem="Kcc-hc-FSU" firstAttribute="leading" secondItem="uuH-NF-udA" secondAttribute="leading" id="5YR-FE-NX8"/>
+                            <constraint firstItem="nWL-pY-T4B" firstAttribute="top" secondItem="uuH-NF-udA" secondAttribute="top" id="9j3-yE-h0X"/>
+                            <constraint firstAttribute="trailing" secondItem="Kcc-hc-FSU" secondAttribute="trailing" id="MMj-Ue-HhQ"/>
+                            <constraint firstItem="nWL-pY-T4B" firstAttribute="leading" secondItem="uuH-NF-udA" secondAttribute="leading" id="cax-GR-OWz"/>
+                            <constraint firstItem="nBR-ur-T8m" firstAttribute="leading" secondItem="uuH-NF-udA" secondAttribute="leading" id="l2D-jE-JBp"/>
+                            <constraint firstItem="nBR-ur-T8m" firstAttribute="top" secondItem="npb-xG-Ta1" secondAttribute="bottom" id="oGi-Ip-fhK"/>
+                            <constraint firstAttribute="bottom" secondItem="nWL-pY-T4B" secondAttribute="bottom" id="rKi-v3-YnY"/>
+                            <constraint firstAttribute="trailing" secondItem="nBR-ur-T8m" secondAttribute="trailing" id="wRg-tv-KtL"/>
+                            <constraint firstAttribute="bottom" secondItem="Kcc-hc-FSU" secondAttribute="bottom" id="x7T-PI-Vcv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="nWL-pY-T4B" id="nus-zg-DdY"/>
+                        <outlet property="dayNameLabel" destination="nBR-ur-T8m" id="PdT-o1-rqh"/>
+                        <outlet property="tableView" destination="Kcc-hc-FSU" id="kDF-Zo-NK0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BQD-6K-3mW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88" y="195"/>
+        </scene>
+    </scenes>
+</document>

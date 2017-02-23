@@ -12,6 +12,17 @@
 		B6012A4F1E5F5C4E00289A16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6012A4D1E5F5C4E00289A16 /* Main.storyboard */; };
 		B6012A511E5F5C4E00289A16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6012A501E5F5C4E00289A16 /* Assets.xcassets */; };
 		B6012A541E5F5C4E00289A16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6012A521E5F5C4E00289A16 /* LaunchScreen.storyboard */; };
+		B6012A611E5F65AE00289A16 /* Days.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6012A601E5F65AE00289A16 /* Days.storyboard */; };
+		B6012A631E5F681300289A16 /* DaysPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6012A621E5F681300289A16 /* DaysPageViewController.swift */; };
+		B6012A651E5F685200289A16 /* DaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6012A641E5F685200289A16 /* DaysViewController.swift */; };
+		B6012A681E5F68E900289A16 /* Day.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6012A671E5F68E900289A16 /* Day.storyboard */; };
+		B6012A6A1E5F691600289A16 /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6012A691E5F691600289A16 /* DayViewController.swift */; };
+		B6012A6E1E5F6AC500289A16 /* FoodTruckMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6012A6C1E5F6AC500289A16 /* FoodTruckMainCell.swift */; };
+		B6012A6F1E5F6AC500289A16 /* FoodTruckMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6012A6D1E5F6AC500289A16 /* FoodTruckMainCell.xib */; };
+		B6012A721E5F6B7300289A16 /* FoodTruckContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6012A701E5F6B7300289A16 /* FoodTruckContentCell.swift */; };
+		B6012A731E5F6B7300289A16 /* FoodTruckContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6012A711E5F6B7300289A16 /* FoodTruckContentCell.xib */; };
+		B6012A761E5F72A000289A16 /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6012A741E5F72A000289A16 /* MealCell.swift */; };
+		B6012A771E5F72A000289A16 /* MealCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6012A751E5F72A000289A16 /* MealCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +33,17 @@
 		B6012A501E5F5C4E00289A16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6012A531E5F5C4E00289A16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6012A551E5F5C4E00289A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6012A601E5F65AE00289A16 /* Days.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Days.storyboard; path = MainView/View/Days.storyboard; sourceTree = "<group>"; };
+		B6012A621E5F681300289A16 /* DaysPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaysPageViewController.swift; path = MainView/View/DaysPageViewController.swift; sourceTree = "<group>"; };
+		B6012A641E5F685200289A16 /* DaysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaysViewController.swift; path = MainView/View/DaysViewController.swift; sourceTree = "<group>"; };
+		B6012A671E5F68E900289A16 /* Day.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Day.storyboard; path = MainView/View/Day.storyboard; sourceTree = "<group>"; };
+		B6012A691E5F691600289A16 /* DayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayViewController.swift; path = MainView/View/DayViewController.swift; sourceTree = "<group>"; };
+		B6012A6C1E5F6AC500289A16 /* FoodTruckMainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodTruckMainCell.swift; path = MainView/View/FoodTruckMainCell.swift; sourceTree = "<group>"; };
+		B6012A6D1E5F6AC500289A16 /* FoodTruckMainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FoodTruckMainCell.xib; path = MainView/View/FoodTruckMainCell.xib; sourceTree = "<group>"; };
+		B6012A701E5F6B7300289A16 /* FoodTruckContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodTruckContentCell.swift; path = MainView/View/FoodTruckContentCell.swift; sourceTree = "<group>"; };
+		B6012A711E5F6B7300289A16 /* FoodTruckContentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FoodTruckContentCell.xib; path = MainView/View/FoodTruckContentCell.xib; sourceTree = "<group>"; };
+		B6012A741E5F72A000289A16 /* MealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealCell.swift; path = MainView/View/MealCell.swift; sourceTree = "<group>"; };
+		B6012A751E5F72A000289A16 /* MealCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MealCell.xib; path = MainView/View/MealCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 		B6012A481E5F5C4E00289A16 /* Nom */ = {
 			isa = PBXGroup;
 			children = (
+				B6012A5E1E5F653C00289A16 /* MainView */,
 				B6012A5B1E5F5F2C00289A16 /* Launcher */,
 				B6012A491E5F5C4E00289A16 /* AppDelegate.swift */,
 				B6012A4B1E5F5C4E00289A16 /* ViewController.swift */,
@@ -70,6 +93,48 @@
 				B6012A521E5F5C4E00289A16 /* LaunchScreen.storyboard */,
 			);
 			name = Launcher;
+			sourceTree = "<group>";
+		};
+		B6012A5E1E5F653C00289A16 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				B6012A5F1E5F655E00289A16 /* View */,
+			);
+			name = MainView;
+			sourceTree = "<group>";
+		};
+		B6012A5F1E5F655E00289A16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6012A661E5F689F00289A16 /* Day */,
+				B6012A601E5F65AE00289A16 /* Days.storyboard */,
+				B6012A621E5F681300289A16 /* DaysPageViewController.swift */,
+				B6012A641E5F685200289A16 /* DaysViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B6012A661E5F689F00289A16 /* Day */ = {
+			isa = PBXGroup;
+			children = (
+				B6012A6B1E5F6A6300289A16 /* Cells */,
+				B6012A671E5F68E900289A16 /* Day.storyboard */,
+				B6012A691E5F691600289A16 /* DayViewController.swift */,
+			);
+			name = Day;
+			sourceTree = "<group>";
+		};
+		B6012A6B1E5F6A6300289A16 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B6012A6C1E5F6AC500289A16 /* FoodTruckMainCell.swift */,
+				B6012A6D1E5F6AC500289A16 /* FoodTruckMainCell.xib */,
+				B6012A701E5F6B7300289A16 /* FoodTruckContentCell.swift */,
+				B6012A711E5F6B7300289A16 /* FoodTruckContentCell.xib */,
+				B6012A741E5F72A000289A16 /* MealCell.swift */,
+				B6012A751E5F72A000289A16 /* MealCell.xib */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,8 +197,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6012A541E5F5C4E00289A16 /* LaunchScreen.storyboard in Resources */,
+				B6012A731E5F6B7300289A16 /* FoodTruckContentCell.xib in Resources */,
 				B6012A511E5F5C4E00289A16 /* Assets.xcassets in Resources */,
+				B6012A681E5F68E900289A16 /* Day.storyboard in Resources */,
+				B6012A771E5F72A000289A16 /* MealCell.xib in Resources */,
 				B6012A4F1E5F5C4E00289A16 /* Main.storyboard in Resources */,
+				B6012A6F1E5F6AC500289A16 /* FoodTruckMainCell.xib in Resources */,
+				B6012A611E5F65AE00289A16 /* Days.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,8 +214,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6012A761E5F72A000289A16 /* MealCell.swift in Sources */,
 				B6012A4C1E5F5C4E00289A16 /* ViewController.swift in Sources */,
+				B6012A6A1E5F691600289A16 /* DayViewController.swift in Sources */,
+				B6012A6E1E5F6AC500289A16 /* FoodTruckMainCell.swift in Sources */,
 				B6012A4A1E5F5C4E00289A16 /* AppDelegate.swift in Sources */,
+				B6012A721E5F6B7300289A16 /* FoodTruckContentCell.swift in Sources */,
+				B6012A631E5F681300289A16 /* DaysPageViewController.swift in Sources */,
+				B6012A651E5F685200289A16 /* DaysViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
