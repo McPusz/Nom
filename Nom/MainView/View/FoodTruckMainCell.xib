@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="80.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rozbrykana Owca" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0q-6c-sC0">
@@ -25,6 +25,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="x0q-6c-sC0" secondAttribute="trailing" id="3dZ-fD-yNi"/>
                     <constraint firstItem="x0q-6c-sC0" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="W9l-Ym-ftG"/>
@@ -33,6 +34,7 @@
                     <constraint firstItem="x0q-6c-sC0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="jXJ-61-t3u"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="foodTruckNameLabel" destination="x0q-6c-sC0" id="RQW-r7-dUJ"/>
             </connections>
