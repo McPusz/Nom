@@ -54,14 +54,22 @@
 		B6012A481E5F5C4E00289A16 /* Nom */ = {
 			isa = PBXGroup;
 			children = (
+				B6012A5B1E5F5F2C00289A16 /* Launcher */,
 				B6012A491E5F5C4E00289A16 /* AppDelegate.swift */,
 				B6012A4B1E5F5C4E00289A16 /* ViewController.swift */,
 				B6012A4D1E5F5C4E00289A16 /* Main.storyboard */,
 				B6012A501E5F5C4E00289A16 /* Assets.xcassets */,
-				B6012A521E5F5C4E00289A16 /* LaunchScreen.storyboard */,
 				B6012A551E5F5C4E00289A16 /* Info.plist */,
 			);
 			path = Nom;
+			sourceTree = "<group>";
+		};
+		B6012A5B1E5F5F2C00289A16 /* Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				B6012A521E5F5C4E00289A16 /* LaunchScreen.storyboard */,
+			);
+			name = Launcher;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
