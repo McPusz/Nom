@@ -23,9 +23,21 @@
 		B6012A731E5F6B7300289A16 /* FoodTruckContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6012A711E5F6B7300289A16 /* FoodTruckContentCell.xib */; };
 		B6012A761E5F72A000289A16 /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6012A741E5F72A000289A16 /* MealCell.swift */; };
 		B6012A771E5F72A000289A16 /* MealCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6012A751E5F72A000289A16 /* MealCell.xib */; };
+		B6039A731E6237F200B2E918 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6039A721E6237F200B2E918 /* UIColorExtension.swift */; };
+		B6039A761E62381500B2E918 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6039A751E62381500B2E918 /* Appearance.swift */; };
+		B62A33EE1E61A4BB006C81D5 /* MealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62A33ED1E61A4BB006C81D5 /* MealViewModel.swift */; };
+		B62A33F11E61A511006C81D5 /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62A33F01E61A511006C81D5 /* MealModel.swift */; };
+		B62A33F31E61E0A6006C81D5 /* FoodTruckModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62A33F21E61E0A6006C81D5 /* FoodTruckModel.swift */; };
+		B62A33F51E61E371006C81D5 /* FoodTruckViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62A33F41E61E371006C81D5 /* FoodTruckViewModel.swift */; };
+		B62A33F71E6208BA006C81D5 /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62A33F61E6208BA006C81D5 /* DayModel.swift */; };
+		B62A33F91E620B35006C81D5 /* DayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62A33F81E620B35006C81D5 /* DayViewModel.swift */; };
+		B62A33FB1E620E06006C81D5 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62A33FA1E620E06006C81D5 /* RealmManager.swift */; };
+		E1DD367FAAF2BFD9A8F81994 /* Pods_Nom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65553FF5C11D9E1D260E16EC /* Pods_Nom.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65553FF5C11D9E1D260E16EC /* Pods_Nom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD3DCFCF381B075058511029 /* Pods-Nom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nom.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nom/Pods-Nom.release.xcconfig"; sourceTree = "<group>"; };
 		B6012A461E5F5C4E00289A16 /* Nom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6012A491E5F5C4E00289A16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6012A4B1E5F5C4E00289A16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +56,16 @@
 		B6012A711E5F6B7300289A16 /* FoodTruckContentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FoodTruckContentCell.xib; path = MainView/View/FoodTruckContentCell.xib; sourceTree = "<group>"; };
 		B6012A741E5F72A000289A16 /* MealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealCell.swift; path = MainView/View/MealCell.swift; sourceTree = "<group>"; };
 		B6012A751E5F72A000289A16 /* MealCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MealCell.xib; path = MainView/View/MealCell.xib; sourceTree = "<group>"; };
+		B6039A721E6237F200B2E918 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Extensions/UIColorExtension.swift; sourceTree = "<group>"; };
+		B6039A751E62381500B2E918 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Appearance.swift; path = Settings/Appearance.swift; sourceTree = "<group>"; };
+		B62A33ED1E61A4BB006C81D5 /* MealViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealViewModel.swift; path = MainView/ViewModel/MealViewModel.swift; sourceTree = "<group>"; };
+		B62A33F01E61A511006C81D5 /* MealModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealModel.swift; path = MainView/Model/MealModel.swift; sourceTree = "<group>"; };
+		B62A33F21E61E0A6006C81D5 /* FoodTruckModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodTruckModel.swift; path = MainView/Model/FoodTruckModel.swift; sourceTree = "<group>"; };
+		B62A33F41E61E371006C81D5 /* FoodTruckViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodTruckViewModel.swift; path = MainView/ViewModel/FoodTruckViewModel.swift; sourceTree = "<group>"; };
+		B62A33F61E6208BA006C81D5 /* DayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayModel.swift; path = MainView/Model/DayModel.swift; sourceTree = "<group>"; };
+		B62A33F81E620B35006C81D5 /* DayViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayViewModel.swift; path = MainView/ViewModel/DayViewModel.swift; sourceTree = "<group>"; };
+		B62A33FA1E620E06006C81D5 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		E78AFCE00F11F3733400ABB1 /* Pods-Nom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nom/Pods-Nom.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +73,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1DD367FAAF2BFD9A8F81994 /* Pods_Nom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DA2FF98F93F1DF33EC3CBCD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65553FF5C11D9E1D260E16EC /* Pods_Nom.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B6012A3D1E5F5C4E00289A16 = {
 			isa = PBXGroup;
 			children = (
 				B6012A481E5F5C4E00289A16 /* Nom */,
 				B6012A471E5F5C4E00289A16 /* Products */,
+				B6700654B24FDC2FB1A625C1 /* Pods */,
+				0DA2FF98F93F1DF33EC3CBCD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +109,8 @@
 		B6012A481E5F5C4E00289A16 /* Nom */ = {
 			isa = PBXGroup;
 			children = (
+				B6039A741E6237FF00B2E918 /* Settings */,
+				B6039A711E6237D800B2E918 /* Extensions */,
 				B6012A5E1E5F653C00289A16 /* MainView */,
 				B6012A5B1E5F5F2C00289A16 /* Launcher */,
 				B6012A491E5F5C4E00289A16 /* AppDelegate.swift */,
@@ -83,6 +118,7 @@
 				B6012A4D1E5F5C4E00289A16 /* Main.storyboard */,
 				B6012A501E5F5C4E00289A16 /* Assets.xcassets */,
 				B6012A551E5F5C4E00289A16 /* Info.plist */,
+				B62A33FA1E620E06006C81D5 /* RealmManager.swift */,
 			);
 			path = Nom;
 			sourceTree = "<group>";
@@ -98,6 +134,8 @@
 		B6012A5E1E5F653C00289A16 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
+				B62A33EF1E61A4F7006C81D5 /* Model */,
+				B62A33EC1E61A49F006C81D5 /* ViewModel */,
 				B6012A5F1E5F655E00289A16 /* View */,
 			);
 			name = MainView;
@@ -137,6 +175,51 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		B6039A711E6237D800B2E918 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B6039A721E6237F200B2E918 /* UIColorExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		B6039A741E6237FF00B2E918 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B6039A751E62381500B2E918 /* Appearance.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		B62A33EC1E61A49F006C81D5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B62A33ED1E61A4BB006C81D5 /* MealViewModel.swift */,
+				B62A33F41E61E371006C81D5 /* FoodTruckViewModel.swift */,
+				B62A33F81E620B35006C81D5 /* DayViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		B62A33EF1E61A4F7006C81D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B62A33F01E61A511006C81D5 /* MealModel.swift */,
+				B62A33F61E6208BA006C81D5 /* DayModel.swift */,
+				B62A33F21E61E0A6006C81D5 /* FoodTruckModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B6700654B24FDC2FB1A625C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E78AFCE00F11F3733400ABB1 /* Pods-Nom.debug.xcconfig */,
+				AD3DCFCF381B075058511029 /* Pods-Nom.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6012A581E5F5C4E00289A16 /* Build configuration list for PBXNativeTarget "Nom" */;
 			buildPhases = (
+				CC56E6F7A5366CDEACA935CB /* [CP] Check Pods Manifest.lock */,
 				B6012A421E5F5C4E00289A16 /* Sources */,
 				B6012A431E5F5C4E00289A16 /* Frameworks */,
 				B6012A441E5F5C4E00289A16 /* Resources */,
+				C4316E799C0F7B9B22087D9F /* [CP] Embed Pods Frameworks */,
+				5265F7D9A9F9A62933C91B3A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,19 +295,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5265F7D9A9F9A62933C91B3A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nom/Pods-Nom-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4316E799C0F7B9B22087D9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nom/Pods-Nom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC56E6F7A5366CDEACA935CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B6012A421E5F5C4E00289A16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B62A33F51E61E371006C81D5 /* FoodTruckViewModel.swift in Sources */,
+				B62A33F11E61A511006C81D5 /* MealModel.swift in Sources */,
+				B62A33FB1E620E06006C81D5 /* RealmManager.swift in Sources */,
 				B6012A761E5F72A000289A16 /* MealCell.swift in Sources */,
 				B6012A4C1E5F5C4E00289A16 /* ViewController.swift in Sources */,
+				B6039A761E62381500B2E918 /* Appearance.swift in Sources */,
 				B6012A6A1E5F691600289A16 /* DayViewController.swift in Sources */,
+				B62A33F31E61E0A6006C81D5 /* FoodTruckModel.swift in Sources */,
 				B6012A6E1E5F6AC500289A16 /* FoodTruckMainCell.swift in Sources */,
 				B6012A4A1E5F5C4E00289A16 /* AppDelegate.swift in Sources */,
+				B62A33EE1E61A4BB006C81D5 /* MealViewModel.swift in Sources */,
+				B62A33F71E6208BA006C81D5 /* DayModel.swift in Sources */,
+				B6039A731E6237F200B2E918 /* UIColorExtension.swift in Sources */,
 				B6012A721E5F6B7300289A16 /* FoodTruckContentCell.swift in Sources */,
 				B6012A631E5F681300289A16 /* DaysPageViewController.swift in Sources */,
 				B6012A651E5F685200289A16 /* DaysViewController.swift in Sources */,
+				B62A33F91E620B35006C81D5 /* DayViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +483,7 @@
 		};
 		B6012A591E5F5C4E00289A16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E78AFCE00F11F3733400ABB1 /* Pods-Nom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Nom/Info.plist;
@@ -352,6 +496,7 @@
 		};
 		B6012A5A1E5F5C4E00289A16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD3DCFCF381B075058511029 /* Pods-Nom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Nom/Info.plist;
@@ -381,6 +526,7 @@
 				B6012A5A1E5F5C4E00289A16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

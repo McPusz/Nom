@@ -21,5 +21,11 @@ class MealCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
+    
+    func configure(cellProtocol: MealCellProtocol, indexPath: IndexPath) {
+        mealNameLabel.text = cellProtocol.getMealName(indexPath: indexPath)
+        mealPriceLabel.text = cellProtocol.getMealPrice(indexPath: indexPath)
+        ingredientsLabel.text = cellProtocol.getMealIngredients(indexPath: indexPath)
+    }
+    
 }

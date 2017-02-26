@@ -14,8 +14,17 @@ class FoodTruckMainCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-
     }
 
+    func configure(cellProtocol: FoodTruckCellProtocol, indexPath: IndexPath){
+        foodTruckNameLabel.text = cellProtocol.getFoodTruckName(indexPath: indexPath)
+    }
     
+    func setExpandedCellLayout(isExpanded: Bool) {
+        if isExpanded {
+            print("expanded layout")
+        } else {
+            print("collapsed layout")
+        }
+    }
 }
