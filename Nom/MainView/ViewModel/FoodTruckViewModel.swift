@@ -9,33 +9,51 @@
 import Foundation
 import RealmSwift
 
-class FoodTruckViewModel: FoodTruckCellProtocol {
-    var model = [FoodTruckModel()]
+
+extension DayViewModel: DayFoodTruckCellProtocol {
     
-    init() {
-        let realm = try! Realm()
-        model = Array(realm.objects(FoodTruckModel.self))
+    func getDayFoodTrucksNames(dayNumber: Int, indexPath: IndexPath) -> String {
+        return model[dayNumber].foodTrucks[indexPath.section].name
     }
     
-    func getFoodTruckName(indexPath: IndexPath) -> String {
-        return model[indexPath.row].name
+    func getDayFoodTruckNumber(dayNumber: Int, indexPath: IndexPath) -> String? {
+        return model[dayNumber].foodTrucks[indexPath.section].phone
     }
     
-    func getFoodTruckPhone(indexPath: IndexPath) -> String? {
-        return model[indexPath.row].phone
-    }
-    
-    func getFoodTruckMeals(indexPath:IndexPath) -> [MealModel] {
-        return Array(model[indexPath.row].meals)
-    }
-    
-    func getFoodTrucksNumber() -> Int {
-        return model.count
-    }
 }
 
-protocol FoodTruckCellProtocol {
-    func getFoodTruckName(indexPath: IndexPath) -> String
-    func getFoodTruckPhone(indexPath: IndexPath) -> String?
-    func getFoodTruckMeals(indexPath:IndexPath) -> [MealModel]
+protocol DayFoodTruckCellProtocol {
+    func getDayFoodTrucksNames(dayNumber: Int, indexPath: IndexPath) -> String
+    func getDayFoodTruckNumber(dayNumber: Int, indexPath: IndexPath) -> String?
 }
+
+//class FoodTruckViewModel: FoodTruckCellProtocol {
+//    var model = [FoodTruckModel()]
+//    
+//    init() {
+//        let realm = try! Realm()
+//        model = Array(realm.objects(FoodTruckModel.self))
+//    }
+//    
+//    func getFoodTruckName(indexPath: IndexPath) -> String {
+//        return model[indexPath.row].name
+//    }
+//    
+//    func getFoodTruckPhone(indexPath: IndexPath) -> String? {
+//        return model[indexPath.row].phone
+//    }
+//    
+//    func getFoodTruckMeals(indexPath:IndexPath) -> [MealModel] {
+//        return Array(model[indexPath.row].meals)
+//    }
+//    
+//    func getFoodTrucksNumber() -> Int {
+//        return model.count
+//    }
+//}
+//
+//protocol FoodTruckCellProtocol {
+//    func getFoodTruckName(indexPath: IndexPath) -> String
+//    func getFoodTruckPhone(indexPath: IndexPath) -> String?
+//    func getFoodTruckMeals(indexPath:IndexPath) -> [MealModel]
+//}

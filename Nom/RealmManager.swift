@@ -21,7 +21,7 @@ struct RealmManager {
     
     private static func createDatabase() {
         try! realm().write() {
-            var hindus = realm().create(hindusData())
+            var monday = realm().add(mondayData())
         }
     }
     
@@ -37,8 +37,15 @@ struct RealmManager {
             MealModel(value: ["Chana Masala", "11/14", "Ostry 2/5: Ciecierzyca w pomidorowym sosie curry z ryżem basmati."])
         ]
 
-        let hindus = FoodTruckModel(value: ["Hindus", nil, hindusMeals])
-        return hindus
+        let hindus: [Any?] = ["Hindus", nil, hindusMeals]
+        return FoodTruckModel(value: hindus)
+    }
+    
+    //FIXME: prepare more data
+    private static func mondayData() -> DayModel {
+        let foodTrucks: [FoodTruckModel] = [hindusData()]
+        let monday: [Any?] = ["Poniedziałek", foodTrucks]
+        return DayModel(value: monday)
     }
 }
 

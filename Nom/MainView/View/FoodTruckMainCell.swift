@@ -16,8 +16,8 @@ class FoodTruckMainCell: UITableViewCell {
         super.awakeFromNib()
     }
 
-    func configure(cellProtocol: FoodTruckCellProtocol, indexPath: IndexPath){
-        foodTruckNameLabel.text = cellProtocol.getFoodTruckName(indexPath: indexPath)
+    func configure(cellProtocol: DayFoodTruckCellProtocol, dayNumber: Int, indexPath: IndexPath){
+        foodTruckNameLabel.text = cellProtocol.getDayFoodTrucksNames(dayNumber: dayNumber, indexPath: indexPath)
     }
     
     func setExpandedCellLayout(isExpanded: Bool) {

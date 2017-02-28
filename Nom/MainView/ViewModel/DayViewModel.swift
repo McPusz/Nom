@@ -10,7 +10,7 @@ import Foundation
 import RealmSwift
 
 class DayViewModel {
-    var model = [DayModel()]
+    var model = [DayModel]()
     
     init() {
         let realm = try! Realm()
@@ -25,7 +25,13 @@ class DayViewModel {
         return Array(model[dayNumber].foodTrucks)
     }
     
+    func getDayFoodTrucksNumber(dayNumber: Int) -> Int {
+        return model[dayNumber].foodTrucks.count
+    }
+    
+
     func getNumberOfDays() -> Int {
         return model.count
     }
 }
+

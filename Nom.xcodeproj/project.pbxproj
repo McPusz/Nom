@@ -23,7 +23,7 @@
 		B6012A731E5F6B7300289A16 /* FoodTruckContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6012A711E5F6B7300289A16 /* FoodTruckContentCell.xib */; };
 		B6012A761E5F72A000289A16 /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6012A741E5F72A000289A16 /* MealCell.swift */; };
 		B6012A771E5F72A000289A16 /* MealCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6012A751E5F72A000289A16 /* MealCell.xib */; };
-		B6039A731E6237F200B2E918 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6039A721E6237F200B2E918 /* UIColorExtension.swift */; };
+		B6039A731E6237F200B2E918 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6039A721E6237F200B2E918 /* Extensions.swift */; };
 		B6039A761E62381500B2E918 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6039A751E62381500B2E918 /* Appearance.swift */; };
 		B62A33EE1E61A4BB006C81D5 /* MealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62A33ED1E61A4BB006C81D5 /* MealViewModel.swift */; };
 		B62A33F11E61A511006C81D5 /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62A33F01E61A511006C81D5 /* MealModel.swift */; };
@@ -32,6 +32,7 @@
 		B62A33F71E6208BA006C81D5 /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62A33F61E6208BA006C81D5 /* DayModel.swift */; };
 		B62A33F91E620B35006C81D5 /* DayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62A33F81E620B35006C81D5 /* DayViewModel.swift */; };
 		B62A33FB1E620E06006C81D5 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62A33FA1E620E06006C81D5 /* RealmManager.swift */; };
+		B6AE1BBD1E65F48A0071F2AB /* StoryboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE1BBC1E65F48A0071F2AB /* StoryboardManager.swift */; };
 		E1DD367FAAF2BFD9A8F81994 /* Pods_Nom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65553FF5C11D9E1D260E16EC /* Pods_Nom.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +57,7 @@
 		B6012A711E5F6B7300289A16 /* FoodTruckContentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FoodTruckContentCell.xib; path = MainView/View/FoodTruckContentCell.xib; sourceTree = "<group>"; };
 		B6012A741E5F72A000289A16 /* MealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealCell.swift; path = MainView/View/MealCell.swift; sourceTree = "<group>"; };
 		B6012A751E5F72A000289A16 /* MealCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MealCell.xib; path = MainView/View/MealCell.xib; sourceTree = "<group>"; };
-		B6039A721E6237F200B2E918 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Extensions/UIColorExtension.swift; sourceTree = "<group>"; };
+		B6039A721E6237F200B2E918 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Extensions/Extensions.swift; sourceTree = "<group>"; };
 		B6039A751E62381500B2E918 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Appearance.swift; path = Settings/Appearance.swift; sourceTree = "<group>"; };
 		B62A33ED1E61A4BB006C81D5 /* MealViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealViewModel.swift; path = MainView/ViewModel/MealViewModel.swift; sourceTree = "<group>"; };
 		B62A33F01E61A511006C81D5 /* MealModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealModel.swift; path = MainView/Model/MealModel.swift; sourceTree = "<group>"; };
@@ -65,6 +66,7 @@
 		B62A33F61E6208BA006C81D5 /* DayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayModel.swift; path = MainView/Model/DayModel.swift; sourceTree = "<group>"; };
 		B62A33F81E620B35006C81D5 /* DayViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayViewModel.swift; path = MainView/ViewModel/DayViewModel.swift; sourceTree = "<group>"; };
 		B62A33FA1E620E06006C81D5 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		B6AE1BBC1E65F48A0071F2AB /* StoryboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardManager.swift; path = Settings/StoryboardManager.swift; sourceTree = "<group>"; };
 		E78AFCE00F11F3733400ABB1 /* Pods-Nom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nom/Pods-Nom.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,7 +120,6 @@
 				B6012A4D1E5F5C4E00289A16 /* Main.storyboard */,
 				B6012A501E5F5C4E00289A16 /* Assets.xcassets */,
 				B6012A551E5F5C4E00289A16 /* Info.plist */,
-				B62A33FA1E620E06006C81D5 /* RealmManager.swift */,
 			);
 			path = Nom;
 			sourceTree = "<group>";
@@ -178,7 +179,7 @@
 		B6039A711E6237D800B2E918 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B6039A721E6237F200B2E918 /* UIColorExtension.swift */,
+				B6039A721E6237F200B2E918 /* Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -186,7 +187,9 @@
 		B6039A741E6237FF00B2E918 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				B62A33FA1E620E06006C81D5 /* RealmManager.swift */,
 				B6039A751E62381500B2E918 /* Appearance.swift */,
+				B6AE1BBC1E65F48A0071F2AB /* StoryboardManager.swift */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -356,11 +359,12 @@
 				B6039A761E62381500B2E918 /* Appearance.swift in Sources */,
 				B6012A6A1E5F691600289A16 /* DayViewController.swift in Sources */,
 				B62A33F31E61E0A6006C81D5 /* FoodTruckModel.swift in Sources */,
+				B6AE1BBD1E65F48A0071F2AB /* StoryboardManager.swift in Sources */,
 				B6012A6E1E5F6AC500289A16 /* FoodTruckMainCell.swift in Sources */,
 				B6012A4A1E5F5C4E00289A16 /* AppDelegate.swift in Sources */,
 				B62A33EE1E61A4BB006C81D5 /* MealViewModel.swift in Sources */,
 				B62A33F71E6208BA006C81D5 /* DayModel.swift in Sources */,
-				B6039A731E6237F200B2E918 /* UIColorExtension.swift in Sources */,
+				B6039A731E6237F200B2E918 /* Extensions.swift in Sources */,
 				B6012A721E5F6B7300289A16 /* FoodTruckContentCell.swift in Sources */,
 				B6012A631E5F681300289A16 /* DaysPageViewController.swift in Sources */,
 				B6012A651E5F685200289A16 /* DaysViewController.swift in Sources */,

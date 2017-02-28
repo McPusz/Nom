@@ -9,33 +9,63 @@
 import Foundation
 import RealmSwift
 
-class MealViewModel: MealCellProtocol {
-    var model = [MealModel()]
+
+extension DayViewModel: MealCellProtocol {
     
-    init() {
-        let realm = try! Realm()
-        model = Array(realm.objects(MealModel.self))
+    func getMealName(dayNumber: Int, foodTruckIndex: IndexPath, indexPath: IndexPath) -> String {
+        return model[dayNumber].foodTrucks[foodTruckIndex.section].meals[indexPath.row].name
     }
     
-    func getMealName(indexPath: IndexPath) -> String {
-       return model[indexPath.row].name
+    func getMealPrice(dayNumber: Int, foodTruckIndex: IndexPath, indexPath: IndexPath) -> String {
+        return model[dayNumber].foodTrucks[foodTruckIndex.section].meals[indexPath.row].price
     }
     
-    func getMealPrice(indexPath: IndexPath) -> String {
-        return model[indexPath.row].price
+    func getMealIngredients(dayNumber: Int, foodTruckIndex: IndexPath, indexPath: IndexPath) -> String? {
+        return model[dayNumber].foodTrucks[foodTruckIndex.section].meals[indexPath.row].ingredients
+    }
+
+    
+    func getMealsNumber(dayNumber: Int, foodTruckIndex: IndexPath) -> Int {
+        return model[dayNumber].foodTrucks[foodTruckIndex.section].meals.count
     }
     
-    func getMealIngredients(indexPath: IndexPath) -> String? {
-        return model[indexPath.row].ingredients
-    }
     
-    func getMealsNumber() -> Int {
-        return model.count
-    }
 }
 
 protocol MealCellProtocol {
-    func getMealName(indexPath: IndexPath) -> String
-    func getMealPrice(indexPath: IndexPath) -> String
-    func getMealIngredients(indexPath: IndexPath) -> String?
+    func getMealName(dayNumber: Int, foodTruckIndex: IndexPath, indexPath: IndexPath) -> String
+    func getMealPrice(dayNumber: Int, foodTruckIndex: IndexPath, indexPath: IndexPath) -> String
+    func getMealIngredients(dayNumber: Int, foodTruckIndex: IndexPath, indexPath: IndexPath) -> String?
 }
+
+//
+//class MealViewModel: MealCellProtocol {
+//    var model = [MealModel()]
+//    
+//    init() {
+//        let realm = try! Realm()
+//        model = Array(realm.objects(MealModel.self))
+//    }
+//    
+//    func getMealName(indexPath: IndexPath) -> String {
+//       return model[indexPath.row].name
+//    }
+//    
+//    func getMealPrice(indexPath: IndexPath) -> String {
+//        return model[indexPath.row].price
+//    }
+//    
+//    func getMealIngredients(indexPath: IndexPath) -> String? {
+//        return model[indexPath.row].ingredients
+//    }
+//    
+//    func getMealsNumber() -> Int {
+//        return model.count
+//    }
+//}
+//
+//protocol MealCellProtocol {
+//    func getMealName(indexPath: IndexPath) -> String
+//    func getMealPrice(indexPath: IndexPath) -> String
+//    func getMealIngredients(indexPath: IndexPath) -> String?
+//}

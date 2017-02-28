@@ -19,18 +19,21 @@ class DayViewController: UIViewController {
     @IBOutlet weak var dayNameLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
+    var dayNumber: Int!
     fileprivate var cellStates = [CellState]()
-    fileprivate let viewModel = FoodTruckViewModel()
+    fileprivate let viewModel = DayViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setCellStateForEveryObjectInTable()
         self.setupTable()
+        dayNameLabel.text = viewModel.getDayName(dayNumber: dayNumber)
+        
 
     }
 
     private func setCellStateForEveryObjectInTable() {
-        for _ in 0...viewModel.getFoodTrucksNumber() {
+        for _ in 0...viewModel.getDayFoodTrucksNumber(dayNumber: dayNumber) {
             cellStates.append(.Collapsed)
         }
     }
@@ -49,7 +52,7 @@ extension DayViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return viewModel.getFoodTrucksNumber()
+        return viewModel.getDayFoodTrucksNumber(dayNumber: dayNumber)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -70,11 +73,14 @@ extension DayViewController: UITableViewDataSource, UITableViewDelegate {
             }else{
                 cell.setExpandedCellLayout(isExpanded: true)
             }
-            cell.configure(cellProtocol: viewModel, indexPath: indexPath)
+            cell.configure(cellProtocol: viewModel, dayNumber: dayNumber, indexPath: indexPath)
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "FoodTruckContentCell") as! FoodTruckContentCell
-            cell.configure(cellProtocol: viewModel, indexPath: indexPath)
+            cell.dayNumber = dayNumber
+            cell.foodTruckIndex = indexPath
+            cell.configure(cellProtocol: viewModel, dayNumber: dayNumber, indexPath: indexPath)
+            
             return cell
         }
     }

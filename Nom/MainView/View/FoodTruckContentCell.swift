@@ -14,15 +14,19 @@ class FoodTruckContentCell: UITableViewCell {
     @IBOutlet weak var telephoneNumberLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    fileprivate var viewModel: MealViewModel!
+    
+    fileprivate var viewModel = DayViewModel()
+    
+    var dayNumber: Int!
+    var foodTruckIndex: IndexPath!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         self.setupTableView()
     }
     
-    func configure(cellProtocol: FoodTruckCellProtocol, indexPath: IndexPath) {
-        telephoneLabel.text = cellProtocol.getFoodTruckPhone(indexPath: indexPath)
+    func configure(cellProtocol: DayFoodTruckCellProtocol, dayNumber: Int, indexPath: IndexPath) {
+        telephoneLabel.text = cellProtocol.getDayFoodTruckNumber(dayNumber: dayNumber, indexPath: indexPath)
     }
 }
 
@@ -37,12 +41,12 @@ extension FoodTruckContentCell: UITableViewDataSource, UITableViewDelegate {
     }
  
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.getMealsNumber()
+        return viewModel.getMealsNumber(dayNumber: dayNumber, foodTruckIndex: foodTruckIndex)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MealCell") as! MealCell
-        cell.configure(cellProtocol: viewModel, indexPath: indexPath)
+        cell.configure(cellProtocol: viewModel, dayNumber: dayNumber, foodTruckIndex: foodTruckIndex, indexPath: indexPath)
         return cell
     }
 }

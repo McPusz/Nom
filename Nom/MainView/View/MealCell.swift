@@ -18,14 +18,17 @@ class MealCell: UITableViewCell {
     
     @IBOutlet weak var ingredientsLabel: UILabel!
     
+    var dayNumber: Int!
+    var foodTruckIndex: IndexPath!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    func configure(cellProtocol: MealCellProtocol, indexPath: IndexPath) {
-        mealNameLabel.text = cellProtocol.getMealName(indexPath: indexPath)
-        mealPriceLabel.text = cellProtocol.getMealPrice(indexPath: indexPath)
-        ingredientsLabel.text = cellProtocol.getMealIngredients(indexPath: indexPath)
+    func configure(cellProtocol: MealCellProtocol, dayNumber: Int, foodTruckIndex: IndexPath, indexPath: IndexPath) {
+        mealNameLabel.text = cellProtocol.getMealName(dayNumber: dayNumber, foodTruckIndex: foodTruckIndex, indexPath: indexPath)
+        mealPriceLabel.text = cellProtocol.getMealPrice(dayNumber: dayNumber, foodTruckIndex: foodTruckIndex, indexPath: indexPath)
+        ingredientsLabel.text = cellProtocol.getMealIngredients(dayNumber: dayNumber, foodTruckIndex: foodTruckIndex, indexPath: indexPath)
     }
     
 }
