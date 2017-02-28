@@ -37,7 +37,7 @@ extension FoodTruckContentCell: UITableViewDataSource, UITableViewDelegate {
         tableView.dataSource = self
         tableView.register(UINib(nibName: "MealCell", bundle: nil), forCellReuseIdentifier: "MealCell")
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 80.0
+        tableView.estimatedRowHeight = 380.0
     }
  
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -18,9 +18,6 @@ class MealCell: UITableViewCell {
     
     @IBOutlet weak var ingredientsLabel: UILabel!
     
-    var dayNumber: Int!
-    var foodTruckIndex: IndexPath!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

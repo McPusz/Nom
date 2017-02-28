@@ -37,7 +37,7 @@ struct RealmManager {
             MealModel(value: ["Chana Masala", "11/14", "Ostry 2/5: Ciecierzyca w pomidorowym sosie curry z ryżem basmati."])
         ]
 
-        let hindus: [Any?] = ["Hindus", nil, hindusMeals]
+        let hindus: [Any?] = ["Hindus", "12 346 67 95", hindusMeals]
         return FoodTruckModel(value: hindus)
     }
     
