@@ -20,25 +20,25 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" text="chicken tikka masala" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07E-nC-Kfc">
-                        <rect key="frame" x="8" y="23" width="231" height="20.5"/>
+                        <rect key="frame" x="8" y="8" width="231" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Łagodny: kurczak, ryż, masło, karaluchy" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwk-BS-YPv">
-                        <rect key="frame" x="8" y="58.5" width="304" height="95"/>
+                        <rect key="frame" x="8" y="36.5" width="304" height="132"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="zł" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fa5-IG-OfT">
-                        <rect key="frame" x="299" y="23" width="13" height="21"/>
+                        <rect key="frame" x="299" y="8" width="13" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18/23" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fb5-cj-2PH">
-                        <rect key="frame" x="247" y="23" width="44" height="21"/>
+                        <rect key="frame" x="247" y="8" width="44" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -46,20 +46,20 @@
                 </subviews>
                 <color key="backgroundColor" red="0.80136819950000004" green="0.27056581819999997" blue="0.3871124319" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
-                    <constraint firstItem="gwk-BS-YPv" firstAttribute="top" secondItem="07E-nC-Kfc" secondAttribute="bottom" constant="15" id="0gI-Be-dki"/>
-                    <constraint firstItem="fb5-cj-2PH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="5jg-rI-fmb"/>
-                    <constraint firstItem="07E-nC-Kfc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="6y1-fd-tI7"/>
+                    <constraint firstItem="gwk-BS-YPv" firstAttribute="top" secondItem="07E-nC-Kfc" secondAttribute="bottom" constant="8" id="0gI-Be-dki"/>
+                    <constraint firstItem="07E-nC-Kfc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="6y1-fd-tI7"/>
+                    <constraint firstItem="fa5-IG-OfT" firstAttribute="top" secondItem="07E-nC-Kfc" secondAttribute="top" id="Afc-KU-kcB"/>
                     <constraint firstAttribute="trailingMargin" secondItem="gwk-BS-YPv" secondAttribute="trailing" id="L7s-4T-1dw"/>
                     <constraint firstItem="fa5-IG-OfT" firstAttribute="leading" secondItem="fb5-cj-2PH" secondAttribute="trailing" constant="8" id="XTe-H8-J8x"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="gwk-BS-YPv" secondAttribute="bottom" constant="15" id="fD3-9Z-UmX"/>
-                    <constraint firstItem="fa5-IG-OfT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="g09-zv-jAu"/>
+                    <constraint firstItem="fb5-cj-2PH" firstAttribute="top" secondItem="07E-nC-Kfc" secondAttribute="top" id="akr-Ep-I1s"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gwk-BS-YPv" secondAttribute="bottom" id="fD3-9Z-UmX"/>
                     <constraint firstItem="fb5-cj-2PH" firstAttribute="leading" secondItem="07E-nC-Kfc" secondAttribute="trailing" constant="8" id="gHf-ao-aAO"/>
                     <constraint firstItem="07E-nC-Kfc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="hhe-dj-OZk"/>
                     <constraint firstItem="gwk-BS-YPv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="qH8-5G-0mP"/>
                     <constraint firstItem="fa5-IG-OfT" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="xCu-GE-SVo"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.9997916818" green="0.98964676785933059" blue="0.13883380813684393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
                 <outlet property="currencyLabel" destination="fa5-IG-OfT" id="Qn4-5W-6Sv"/>
                 <outlet property="ingredientsLabel" destination="gwk-BS-YPv" id="ZdN-0M-um4"/>
