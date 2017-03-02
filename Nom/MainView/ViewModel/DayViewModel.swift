@@ -13,6 +13,8 @@ class DayViewModel {
     var model = [DayModel]()
     
     init() {
+        RealmManager.checkIfRealmIsEmpty()
+
         let realm = try! Realm()
         model = Array(realm.objects(DayModel.self))
     }
@@ -29,6 +31,9 @@ class DayViewModel {
         return model[dayNumber].foodTrucks.count
     }
     
+    func getDayColor(dayNumber: Int) -> DayColors {
+        return DayColors(rawValue: model[dayNumber].dayColor)!
+    }
 
     func getNumberOfDays() -> Int {
         return model.count

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Colors {
+struct ColorStrings {
     //reds
     static let lightRed = "#FF8A80"
     static let mediumRed = "#FF5252"

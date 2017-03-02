@@ -31,8 +31,9 @@ class FoodTruckContentCell: UITableViewCell {
     }
     
     func configure(cellProtocol: DayFoodTruckCellProtocol, dayNumber: Int, indexPath: IndexPath) {
-        telephoneLabel.text = "Telefon"
+        telephoneLabel.text = "Telefon: "
         telephoneNumberLabel.text = cellProtocol.getDayFoodTruckNumber(dayNumber: dayNumber, indexPath: indexPath)
+        self.setupLayout()
     }
 
 }
@@ -60,6 +61,7 @@ extension FoodTruckContentCell: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MealCell") as! MealCell
+        cell.dayNumber = dayNumber
         cell.configure(cellProtocol: viewModel, dayNumber: dayNumber, foodTruckIndex: foodTruckIndex, indexPath: indexPath)
         return cell
     }
@@ -68,4 +70,19 @@ extension FoodTruckContentCell: UITableViewDataSource, UITableViewDelegate {
         return UITableViewAutomaticDimension
       
     }
+}
+
+//MARK: Layout
+extension FoodTruckContentCell {
+    
+    fileprivate func setupLayout() {
+        let color = viewModel.getDayColor(dayNumber: dayNumber)
+        self.backgroundColor = UIColor(hexString: Color.getDarkColor(colorType: color))
+        self.telephoneLabel.font = telephoneLabel.font.withSize(16)
+        self.telephoneNumberLabel.font = telephoneNumberLabel.font.withSize(16)
+        self.telephoneLabel.textColor = UIColor(hexString: Color.getLightColors(colorType: color))
+        self.telephoneNumberLabel.textColor = UIColor(hexString: Color.getWhiteColor(colorType: color))
+        
+    }
+    
 }

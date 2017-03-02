@@ -13,12 +13,15 @@ class DaysViewController: UIViewController {
     
     @IBOutlet weak var pageControl: UIPageControl!
     
+    private let viewModel = DayViewModel()
     fileprivate var delegate: DaysPageViewControllerDelegate?
     fileprivate var daysPageViewController: DaysPageViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let dayColor = viewModel.getDayColor(dayNumber: pageControl.currentPage)
+        pageControl.backgroundColor = UIColor(hexString: Color.getMidColor(colorType: dayColor))
     }
 
     
@@ -28,10 +31,6 @@ class DaysViewController: UIViewController {
             daysPageViewController = destinationViewController
             daysPageViewController.daysPageVCDelegate = self
         }
-//        if let destinationViewController = segue.destination as? DaysPageViewController {
-//            daysPageViewController = destinationViewController
-//            daysPageViewController.daysPageVCDelegate = self
-//        }
     }
     
     fileprivate func movePageControlTo(_ index: Int) {

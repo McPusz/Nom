@@ -28,8 +28,7 @@ class DayViewController: UIViewController {
         self.setCellStateForEveryObjectInTable()
         self.setupTable()
         dayNameLabel.text = viewModel.getDayName(dayNumber: dayNumber)
-        
-
+        self.setupLayout()
     }
 
     private func setCellStateForEveryObjectInTable() {
@@ -67,6 +66,7 @@ extension DayViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "FoodTruckMainCell") as! FoodTruckMainCell
+            cell.dayNumber = dayNumber
             
             if cellStates[indexPath.section] == .Collapsed{
                 cell.setExpandedCellLayout(isExpanded: false)
@@ -104,8 +104,17 @@ extension DayViewController: UITableViewDataSource, UITableViewDelegate {
         }
     }
     
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
+    }
+}
+
+//MARK: Layout
+extension DayViewController {
+    
+    fileprivate func setupLayout() {
+        let color = viewModel.getDayColor(dayNumber: dayNumber)
+        backgroundView.backgroundColor = UIColor(hexString: Color.getMidColor(colorType: color))
+        dayNameLabel.textColor = UIColor.white
     }
 }
