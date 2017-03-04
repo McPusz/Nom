@@ -32,6 +32,7 @@
 		B62A33F71E6208BA006C81D5 /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62A33F61E6208BA006C81D5 /* DayModel.swift */; };
 		B62A33F91E620B35006C81D5 /* DayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62A33F81E620B35006C81D5 /* DayViewModel.swift */; };
 		B62A33FB1E620E06006C81D5 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62A33FA1E620E06006C81D5 /* RealmManager.swift */; };
+		B6A6BF1D1E6AFF2600B0F7EA /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A6BF1C1E6AFF2600B0F7EA /* RealmData.swift */; };
 		B6AE1BBD1E65F48A0071F2AB /* StoryboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE1BBC1E65F48A0071F2AB /* StoryboardManager.swift */; };
 		E1DD367FAAF2BFD9A8F81994 /* Pods_Nom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65553FF5C11D9E1D260E16EC /* Pods_Nom.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		B62A33F61E6208BA006C81D5 /* DayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayModel.swift; path = MainView/Model/DayModel.swift; sourceTree = "<group>"; };
 		B62A33F81E620B35006C81D5 /* DayViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayViewModel.swift; path = MainView/ViewModel/DayViewModel.swift; sourceTree = "<group>"; };
 		B62A33FA1E620E06006C81D5 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		B6A6BF1C1E6AFF2600B0F7EA /* RealmData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
 		B6AE1BBC1E65F48A0071F2AB /* StoryboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardManager.swift; path = Settings/StoryboardManager.swift; sourceTree = "<group>"; };
 		E78AFCE00F11F3733400ABB1 /* Pods-Nom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nom/Pods-Nom.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +192,7 @@
 				B62A33FA1E620E06006C81D5 /* RealmManager.swift */,
 				B6039A751E62381500B2E918 /* Appearance.swift */,
 				B6AE1BBC1E65F48A0071F2AB /* StoryboardManager.swift */,
+				B6A6BF1C1E6AFF2600B0F7EA /* RealmData.swift */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				B6AE1BBD1E65F48A0071F2AB /* StoryboardManager.swift in Sources */,
 				B6012A6E1E5F6AC500289A16 /* FoodTruckMainCell.swift in Sources */,
 				B6012A4A1E5F5C4E00289A16 /* AppDelegate.swift in Sources */,
+				B6A6BF1D1E6AFF2600B0F7EA /* RealmData.swift in Sources */,
 				B62A33EE1E61A4BB006C81D5 /* MealViewModel.swift in Sources */,
 				B62A33F71E6208BA006C81D5 /* DayModel.swift in Sources */,
 				B6039A731E6237F200B2E918 /* Extensions.swift in Sources */,
