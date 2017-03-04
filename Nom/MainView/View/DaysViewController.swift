@@ -19,9 +19,6 @@ class DaysViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let dayColor = viewModel.getDayColor(dayNumber: pageControl.currentPage)
-        pageControl.backgroundColor = UIColor(hexString: Color.getMidColor(colorType: dayColor))
     }
 
     

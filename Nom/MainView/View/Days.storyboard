@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dlP-P3-zj1">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <segue destination="HTK-eB-SIc" kind="embed" identifier="toPageController" id="ekW-53-8Yx"/>
@@ -30,7 +30,7 @@
                             </containerView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="8" translatesAutoresizingMaskIntoConstraints="NO" id="VIT-q9-9rd">
                                 <rect key="frame" x="0.0" y="603" width="375" height="64"/>
-                                <color key="backgroundColor" red="0.80136819948186533" green="0.270565818243581" blue="0.38711243193404582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="hQq-SE-63G"/>
                                 </constraints>
@@ -39,12 +39,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="VIT-q9-9rd" secondAttribute="trailing" id="8JN-wJ-Lpf"/>
+                            <constraint firstAttribute="bottom" secondItem="dlP-P3-zj1" secondAttribute="bottom" id="A5D-xK-eaO"/>
                             <constraint firstItem="dlP-P3-zj1" firstAttribute="leading" secondItem="EDI-gm-3u3" secondAttribute="leading" id="G7E-8r-wv6"/>
                             <constraint firstItem="xpo-gS-8uP" firstAttribute="top" secondItem="VIT-q9-9rd" secondAttribute="bottom" id="YXR-IG-uPa"/>
                             <constraint firstAttribute="trailing" secondItem="dlP-P3-zj1" secondAttribute="trailing" id="dWD-xE-ChX"/>
                             <constraint firstItem="dlP-P3-zj1" firstAttribute="top" secondItem="EDI-gm-3u3" secondAttribute="top" id="eOw-uC-Ftu"/>
                             <constraint firstItem="VIT-q9-9rd" firstAttribute="leading" secondItem="EDI-gm-3u3" secondAttribute="leading" id="s06-7P-poE"/>
-                            <constraint firstItem="VIT-q9-9rd" firstAttribute="top" secondItem="dlP-P3-zj1" secondAttribute="bottom" id="wNr-gI-7Cb"/>
                         </constraints>
                     </view>
                     <connections>
@@ -58,7 +58,7 @@
         <!--Days Page View Controller-->
         <scene sceneID="7jR-rL-q47">
             <objects>
-                <pageViewController storyboardIdentifier="DaysPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="HTK-eB-SIc" customClass="DaysPageViewController" customModule="Nom" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="DaysPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="HTK-eB-SIc" customClass="DaysPageViewController" customModule="Nom" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1fb-6X-D0e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="190" y="946"/>

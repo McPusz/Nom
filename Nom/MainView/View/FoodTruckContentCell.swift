@@ -25,9 +25,9 @@ class FoodTruckContentCell: UITableViewCell {
         super.awakeFromNib()
         self.setupTableView()
         
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
+//        DispatchQueue.main.async {
+//            self.tableView.reloadData()
+//        }
     }
     
     func configure(cellProtocol: DayFoodTruckCellProtocol, dayNumber: Int, indexPath: IndexPath) {
