@@ -40,3 +40,18 @@ class DayViewModel {
     }
 }
 
+extension DayViewModel {
+    
+    func getDayOfWeek() -> Int {
+        guard let dayOfWeek = Date().dayNumberOfWeek() else { return 0}
+        return (dayOfWeek - 2)
+    }
+    
+    func actualOrNextDayIndex() -> Int {
+        let actualDay = getDayOfWeek()
+        if actualDay > 4 {
+            return 0
+        }
+        return actualDay
+    }
+}

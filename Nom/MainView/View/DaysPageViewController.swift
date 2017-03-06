@@ -41,15 +41,16 @@ class DaysPageViewController: UIPageViewController {
     }()
     
     weak var daysPageVCDelegate: DaysPageViewControllerDelegate?
+    private let viewModel = DayViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
         dataSource = self
         
-        if let firstViewController = orderedViewControllers.first {
-            setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
-        }
+        let actualDayIndex = viewModel.actualOrNextDayIndex()
+        let firstViewController = orderedViewControllers[actualDayIndex]
+        setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
         
         daysPageVCDelegate?.daysPageViewController(daysPageViewController: self, didUpdatePageCount: orderedViewControllers.count)
     }
@@ -78,7 +79,7 @@ extension DaysPageViewController: UIPageViewControllerDataSource {
         let previousIndex = viewControllerIndex - 1
         
         guard previousIndex >= 0 else {
-            return nil
+            return orderedViewControllers.last
         }
         
         guard orderedViewControllers.count > previousIndex else {
@@ -98,7 +99,7 @@ extension DaysPageViewController: UIPageViewControllerDataSource {
         let orderedViewControllersCount = orderedViewControllers.count
         
         guard orderedViewControllersCount != nextIndex else {
-            return nil
+            return orderedViewControllers.first
         }
         
         guard orderedViewControllersCount > nextIndex else {

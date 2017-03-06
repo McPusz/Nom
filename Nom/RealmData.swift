@@ -54,9 +54,9 @@ struct RealmData {
     }
     
     static func getDaysData() -> (names: [String], colors: [String], foodTrucks: [[FoodTruckModel]]) {
-        let names = ["Poniedziałek", "Czwartek"]
-        let colors = [DayColors.blue.rawValue, DayColors.orange.rawValue]
-        let foodTrucks = [RealmManager.getFoodTrucks(foodTruckNames: ["Hindus", "Pizza z pieca", "Major Catering"]), RealmManager.getFoodTrucks(foodTruckNames: ["Manufaktura Krakowska", "Pizza z pieca", "Major Catering", "Rozbrykana Owca"])]
+        let names = ["Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek"]
+        let colors = [DayColors.blue.rawValue, DayColors.orange.rawValue, DayColors.purple.rawValue, DayColors.green.rawValue, DayColors.red.rawValue]
+        let foodTrucks = [RealmManager.getFoodTrucks(foodTruckNames: ["Hindus", "Pizza z pieca", "Major Catering"]),RealmManager.getFoodTrucks(foodTruckNames: ["Hindus", "Pizza z pieca", "Major Catering"]), RealmManager.getFoodTrucks(foodTruckNames: ["Hindus", "Pizza z pieca", "Major Catering"]), RealmManager.getFoodTrucks(foodTruckNames: ["Manufaktura Krakowska", "Pizza z pieca", "Major Catering", "Rozbrykana Owca"]), RealmManager.getFoodTrucks(foodTruckNames: ["Hindus", "Pizza z pieca", "Major Catering"])]
          return (names, colors, foodTrucks)
     }
 }
