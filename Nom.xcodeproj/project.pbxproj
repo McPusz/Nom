@@ -261,6 +261,7 @@
 				TargetAttributes = {
 					B6012A451E5F5C4E00289A16 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = R293VXYL28;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -494,7 +495,9 @@
 			baseConfigurationReference = E78AFCE00F11F3733400ABB1 /* Pods-Nom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R293VXYL28;
 				INFOPLIST_FILE = Nom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mc.Nom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,7 +510,9 @@
 			baseConfigurationReference = AD3DCFCF381B075058511029 /* Pods-Nom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R293VXYL28;
 				INFOPLIST_FILE = Nom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mc.Nom;
 				PRODUCT_NAME = "$(TARGET_NAME)";

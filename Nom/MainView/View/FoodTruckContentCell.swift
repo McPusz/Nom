@@ -24,16 +24,13 @@ class FoodTruckContentCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.setupTableView()
-        
-//        DispatchQueue.main.async {
-//            self.tableView.reloadData()
-//        }
     }
     
     func configure(cellProtocol: DayFoodTruckCellProtocol, dayNumber: Int, indexPath: IndexPath) {
         telephoneLabel.text = "Telefon: "
         telephoneNumberLabel.text = cellProtocol.getDayFoodTruckNumber(dayNumber: dayNumber, indexPath: indexPath)
         self.setupLayout()
+        self.tableView.reloadData()
     }
 
 }
