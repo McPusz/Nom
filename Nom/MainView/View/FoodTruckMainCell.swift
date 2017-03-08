@@ -28,14 +28,18 @@ class FoodTruckMainCell: UITableViewCell {
         let color = viewModel.getDayColor(dayNumber: dayNumber)
         foodTruckNameLabel.textColor = UIColor.white
         if isExpanded {
-            print("expanded layout")
+            self.foodTruckNameLabel.font = self.foodTruckNameLabel.font.withSize(35)
+            self.foodTruckNameLabel.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
             arrowImage.image = #imageLiteral(resourceName: "arrow_up").withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+            //animation
+            UIView.animate(withDuration: 0.3, animations: {
+//                self.arrowImage.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+                self.foodTruckNameLabel.transform = CGAffineTransform(scaleX: 1, y: 1)
+            })
             arrowImage.tintColor = UIColor(hexString: Color.getLightColors(colorType: color))
-            foodTruckNameLabel.font = foodTruckNameLabel.font.withSize(35)
             self.backgroundColor = UIColor(hexString: Color.getDarkColor(colorType: color))
             
         } else {
-            print("collapsed layout")
             arrowImage.image = #imageLiteral(resourceName: "arrow_down").withRenderingMode(UIImageRenderingMode.alwaysTemplate)
             arrowImage.tintColor = UIColor(hexString: Color.getMidColor(colorType: color))
             foodTruckNameLabel.font = foodTruckNameLabel.font.withSize(25)
